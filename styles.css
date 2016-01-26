@@ -182,18 +182,6 @@ span {
   border-radius: 6px;
 }
 
-.thumbnails .caption::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-  content: "";
-  opacity: 0;
-  transform: translate3d(0,50%,0);
-}
-
 .empty-thumbnail {
   background-image: url(images/triangles.jpg);
   width: 460px;
@@ -220,7 +208,7 @@ span {
 
 /*////MEDIA QUERIES////*/
 
-@media all and (min-width: 1280px) and (max-width: 1440px) {
+@media all and (min-width: 1279px) and (max-width: 1440px) {
   header h1 {
     font-size: 2.9em;
   }
@@ -237,7 +225,7 @@ span {
   }
   .nav li {
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 30px;
   }
   section.module.parallax {
     height: 500px;
@@ -255,9 +243,12 @@ span {
   section.module.parallax-1 {
     margin-top: -80px;
   }
+  .contact-container {
+    margin-bottom: 100px;
+  }
 }
 
-@media all and (min-width: 768px) and (max-width: 1279px) {
+@media all and (min-width: 760px) and (max-width: 1278px) {
   header h1 {
     font-size: 2em;
   }
@@ -281,7 +272,7 @@ span {
     line-height: 400px
   }
   section.module h2 {
-    font-size: 2em;
+    font-size: 2.4em;
   }
   section.module p {
     font-size: 1.3em;
@@ -292,23 +283,24 @@ span {
   .moi {
     margin-left: 50px;
     text-align: center;
-    height: 300px;
-    width: 240px;
+    height: 360px;
+    width: 280px;
   }
   .contact {
     text-align: center;
+    margin-bottom: 150px;
   }
   .contact-container {
     flex-direction: column;
   }
 }
 
-@media all and (min-width: 414px) and (max-width: 765px) {
+@media all and (min-width: 414px) and (max-width: 759px) {
   header {
-    height: 100px;
+    height: 130px;
   }
   header h1 {
-    font-size: 1.8em;
+    font-size: 1.9em;
     margin-left: 20px;
   }
   .name {
@@ -327,21 +319,22 @@ span {
   .nav li {
     padding: 0px 5px;
     margin-top: 5px;
+    margin-left: -10px;
   }
   .nav li a {
-    line-height: 1;
+    line-height: 1.2;
     padding: 0px 0;
-    font-size: 18px;
+    font-size: 23px;
   }
   section.module h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
   section.module p {
     font-size: 20px;
     margin-bottom: 40px;
   }
   section.module.parallax h1 {
-    font-size: 80px;
+    font-size: 70px;
     line-height: 400px;
   }
   section.module.parallax-1 {
@@ -377,8 +370,8 @@ span {
     flex-direction: column;
   }
 }
-
-@media all and (min-width: 385px) and (max-width: 413px) {
+/*
+@media all and (min-width: 377px) and (max-width: 413px) {
   header {
     height: 100px;
   }
@@ -414,6 +407,7 @@ span {
   }
   section.module.parallax {
     height: 300px;
+    background-size: contain;
   }
   section.module.parallax-1 {
     margin-top: -50px;
@@ -455,9 +449,94 @@ span {
     width: 300px;
     height: 200px;
   }
+}*/
+
+@media all and (max-width: 413px) {
+  header {
+    height: 130px;
+  }
+  header h1 {
+    font-size: 1.4em;
+    margin-left: 20px;
+  }
+  .name {
+    display: flex;
+    align-content: center;
+    width: 65%;
+  }
+  .nav-div {
+    display: flex;
+    align-content: center;
+    width: 27%;
+  }
+  .nav {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav li {
+    padding: 0px 0px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+  }
+  .nav li a {
+    line-height: 1;
+    padding: 0px 0;
+    font-size: 20px;
+  }
+  section.module p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  section.module.parallax {
+    height: 300px;
+  }
+  section.module.parallax-1 {
+    margin-top: -50px;
+  }
+  section.module.parallax h1 {
+    font-size: 55px;
+    line-height: 300px;
+  }
+  section.module h2 {
+    font-size: 1.8em;
+  }
+  .moi {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    width: 190px;
+    height: 240px;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact h1 {
+    font-size: 1.5em;
+  }
+  .contact h2 {
+    font-size: 1.3em;
+  }
+  .thumbnails {
+    margin-left: 0;
+  }
+  .thumbnails li {
+    margin-left: -20px;
+  }
+  .thumbnails img {
+    width: 300px;
+    height: 200px;
+  }
+  .empty-thumbnail {
+    width: 300px;
+    height: 200px;
+  }
+  .footer p {
+    font-size: 1em;
+  }
 }
 
-@media all and (max-width: 384px) {
+@media all and (max-width: 360px) {
   header {
     height: 100px;
   }
@@ -476,18 +555,19 @@ span {
     width: 27%;
   }
   .nav {
-    margin-left: 0;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
   }
   .nav li {
-    padding: 0px 5px;
-    margin-top: 5px;
+    padding: 0px 0px;
+    padding-bottom: 5px;
+    margin-top: 0px;
   }
   .nav li a {
     line-height: 1;
     padding: 0px 0;
-    font-size: 18px;
+    font-size: 20px;
   }
   section.module p {
     font-size: 20px;
@@ -500,17 +580,43 @@ span {
     margin-top: -50px;
   }
   section.module.parallax h1 {
-    font-size: 50px;
+    font-size: 55px;
     line-height: 300px;
   }
   section.module h2 {
     font-size: 1.8em;
   }
+  .moi {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    width: 190px;
+    height: 240px;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
   .contact-container h1 {
     font-size: 1.5em;
   }
+  .contact h2 {
+    font-size: 1.4em;
+  }
+  .thumbnails {
+    margin-left: -20px;
+  }
   .thumbnails li {
-    margin-left: -35px;
-    margin-right: 0px;
+    margin-left: 0;
+  }
+  .thumbnails img {
+    width: 250px;
+    height: 160px;
+  }
+  .empty-thumbnail {
+    width: 200px;
+    height: 100px;
+  }
+  .footer p {
+    font-size: 1em;
   }
 }
