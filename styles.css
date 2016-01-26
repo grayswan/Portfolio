@@ -1,21 +1,22 @@
-@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Bad+Script);
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600|Ubuntu|Droid+Sans|Poiret+One|Tinos|Philosopher);
+@import url(https://fonts.googleapis.com/css?family=Bad+Script|Poiret+One);
 
 body {
   margin: 0;
-  font-family: "Poiret One";
+  font-family: "Poiret One", "Avant Garde";
   font-weight: bolder;
 }
 
 header {
   display: flex;
   height: 150px;
-  background-color: #fff
+}
+
+.name {
+  width: 60%;
 }
 
 header h1 {
-  font-family: "Bad Script";
+  font-family: "Bad Script", "Papyrus";
   margin-left: 40px;
   align-self: center;
   color: #383838;
@@ -23,9 +24,14 @@ header h1 {
   font-size: 3em;
 }
 
+.div-nav {
+  width: 27%;
+}
+
 .nav {
-  height: 50px;
-  margin-left: 700px;
+  height: 150px;
+  margin-right: 0;
+  margin-left: 400px;
   display: inline-flex;
 }
 
@@ -84,7 +90,7 @@ section.module.parallax {
 
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 120px;
+  font-size: 140px;
   line-height: 600px;
   font-weight: 700;
   font-family: "Poiret One";
@@ -93,7 +99,7 @@ section.module.parallax h1 {
 }
 
 section.module.parallax-1 {
-  margin-top: -100px;
+  margin-top: -115px;
   background-image: url("images/ferns.jpeg");
 }
 
@@ -166,7 +172,7 @@ span {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: 50px;
+  justify-content: center;
 }
 
 .thumbnails li {
@@ -177,9 +183,14 @@ span {
 }
 
 .empty-thumbnail {
+  background-image: url(images/triangles.jpg);
   width: 460px;
-  height: 300px;
+  height: 320px;
   padding-top: 2px;
+}
+
+.empty-thumbnail h2 {
+  margin-top: 115px;
 }
 
 .footer {
@@ -197,115 +208,192 @@ span {
 
 /*////MEDIA QUERIES////*/
 
-@media all and (max-width: 1440px) {
+@media all and (min-width: 1280px) and (max-width: 1440px) {
   header h1 {
-    font-size: 1.6em;
+    font-size: 2.9em;
   }
-  header .nav {
-    margin-left: 500px;
+  .name {
+    display: flex;
+    align-content: center;
+    width: 67%;
   }
-}
-
-@media all and (max-width: 1280px) {
-  header h1 {
-    font-size: 1.6em;
-  }
-  header .nav {
-    margin-left: 400px;
-  }
-}
-
-@media all and (max-width: 1024px) {
-  header h1 {
-    font-size: 2.5em;
-  }
-  header .nav {
-    margin-left: 150px;
-    width: 0px;
-  }
-  section.module.parallax h1 {
-    font-size: 140px;
-  }
-  section.module h2 {
-    font-size: 3em;
-  }
-  section.module p {
-    font-size: 1.75em;
-  }
-}
-
-@media all and (max-width: 768px) {
-  header {
-    height: 100px;
-    align-items: center;
+  .nav-div {
+    width: 32%;
   }
   .nav {
-    margin-left: 100px;
-    width: 0px;
-    margin-top: -20px;
+    margin-left: 0;
   }
   .nav li {
-    padding: 0px 15px;
+    padding: 10px 20px;
+    font-size: 20px;
   }
-  .nav li a {
-    line-height: 1.4;
-    font-size: 25px;
-    padding-top: 0px;
-    padding-bottom: 10px;
-  }
-  header h1 {
-    font-size: 2em;
-    margin-left: 20px;
-  }
-  section.module h2 {
-    font-size: 30px;
-  }
-  section.module p {
-    font-size: 25px;
-    margin-bottom: 40px;
+  section.module.parallax {
+    height: 500px;
   }
   section.module.parallax h1 {
-    font-size: 96px;
-    line-height: 400px;
+    font-size: 120px;
+    line-height: 500px
+  }
+  section.module h2 {
+    font-size: 2.5em;
+  }
+  section.module p {
+    font-size: 2em;
   }
   section.module.parallax-1 {
     margin-top: -80px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1279px) {
+  header h1 {
+    font-size: 2em;
+  }
+  .name {
+    display: flex;
+    align-content: center;
+    width: 50%;
+  }
+  .nav-div {
+    width: 45%;
+  }
+  .nav {
+    margin-left: 0;
+  }
+  .nav li {
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 100px;
+    line-height: 400px
+  }
+  section.module h2 {
+    font-size: 2em;
+  }
+  section.module p {
+    font-size: 1.3em;
   }
   section.module.parallax {
     height: 400px;
   }
   .moi {
-    margin-left: 0;
+    margin-left: 50px;
     text-align: center;
-    height: 400px;
-    width: 290px;
+    height: 300px;
+    width: 240px;
   }
   .contact {
     text-align: center;
   }
+  .contact-container {
+    flex-direction: column;
+  }
 }
 
-@media all and (max-width: 414px) {
+@media all and (min-width: 414px) and (max-width: 765px) {
   header {
     height: 100px;
   }
   header h1 {
-    align-self: center;
-    font-size: 1.5em;
-    margin-left: 15px;
+    font-size: 1.8em;
+    margin-left: 20px;
+  }
+  .name {
+    display: flex;
+    align-content: center;
+    width: 70%;
+  }
+  .nav-div {
+    width: 27%;
   }
   .nav {
+    margin-left: 0;
+    display: flex;
     flex-direction: column;
-    margin-left: 0px;
-    height: 100px;
   }
   .nav li {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0px 5px;
+    margin-top: 5px;
   }
   .nav li a {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    line-height: 1;
+    padding: 0px 0;
+    font-size: 18px;
+  }
+  section.module h2 {
+    font-size: 30px;
+  }
+  section.module p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  section.module.parallax h1 {
+    font-size: 80px;
+    line-height: 400px;
+  }
+  section.module.parallax-1 {
+    margin-top: -50px;
+  }
+  section.module.parallax {
+    height: 400px;
+  }
+  .thumbnails {
+    margin-left: 0;
+  }
+  .thumbnails li {
+    margin-left: 0;
+  }
+  .thumbnails img {
+    width: 300px;
+    height: 200px;
+  }
+  .empty-thumbnail {
+    width: 300px;
+    height: 200px;
+  }
+  .moi {
+    margin-left: 50px;
+    text-align: center;
+    height: 300px;
+    width: 210px;
+  }
+  .contact {
+    text-align: center;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 385px) and (max-width: 413px) {
+  header {
+    height: 100px;
+  }
+  header h1 {
+    font-size: 1.8em;
+    margin-left: 20px;
+  }
+  .name {
+    display: flex;
+    align-content: center;
+    width: 70%;
+  }
+  .nav-div {
+    width: 27%;
+  }
+  .nav {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav li {
+    padding: 0px 5px;
+    margin-top: 5px;
+  }
+  .nav li a {
+    line-height: 1;
+    padding: 0px 0;
     font-size: 18px;
   }
   section.module p {
@@ -319,11 +407,14 @@ span {
     margin-top: -50px;
   }
   section.module.parallax h1 {
-    font-size: 60px;
+    font-size: 50px;
     line-height: 300px;
   }
+  section.module h2 {
+    font-size: 1.8em;
+  }
   .footer p {
-    font-size: 1.1em;
+    font-size: .9em;
   }
   .moi {
     margin-left: 0;
@@ -354,19 +445,60 @@ span {
   }
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 384px) {
+  header {
+    height: 100px;
+  }
   header h1 {
-    font-size: 1.3em;
-    margin-left: 120px;
+    font-size: 1.4em;
+    margin-left: 20px;
   }
-  header.nav {
-    margin-left: -330px;
+  .name {
+    display: flex;
+    align-content: center;
+    width: 65%;
   }
-  .contact-container h1 h2 {
-    font-size: 1em;
+  .nav-div {
+    display: flex;
+    align-content: center;
+    width: 27%;
+  }
+  .nav {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav li {
+    padding: 0px 5px;
+    margin-top: 5px;
+  }
+  .nav li a {
+    line-height: 1;
+    padding: 0px 0;
+    font-size: 18px;
+  }
+  section.module p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  section.module.parallax {
+    height: 300px;
+  }
+  section.module.parallax-1 {
+    margin-top: -50px;
+  }
+  section.module.parallax h1 {
+    font-size: 50px;
+    line-height: 300px;
+  }
+  section.module h2 {
+    font-size: 1.8em;
+  }
+  .contact-container h1 {
+    font-size: 1.5em;
   }
   .thumbnails li {
-    margin-left: -30px;
+    margin-left: -35px;
     margin-right: 0px;
   }
 }
