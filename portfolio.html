@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
-    <title>grayswan</title>
+    <link href='https://fonts.googleapis.com/css?family=Bad+Script|Poiret+One' rel='stylesheet' type='text/css'>
+    <title>grayswan | Kristen Grashel</title>
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
   </head>
-  <body class="portfolio">
+  <body>
     <header>
-      <div class="name"><h1>Kristen Swan Grashel</h1></div>
-      <div class=nav-div>
+      <div class="name"><h1>Kristen Grashel</h1></div>
+      <div class="nav-div">
         <ul class="nav">
           <li><a href="index.html">home</a></li>
           <li><a href="portfolio.html">portfolio</a></li>
@@ -18,32 +19,54 @@
         </ul>
       </div>
     </header>
-    <div class="portfolio-body">
-        <ul class="thumbnails">
-          <li>
-            <a href="http://wastenot.io"><img src="images/wastenot.png" width="460px" height="320px" alt="Wastenot"></a>
-          </li>
-          <li>
-            <a href="http://grayswan.github.io/Octodex/"><img src="images/Octodex.png" width="460px" height="320px" alt="Octodex"></a>
-          </li>
-          <li>
-            <a href="http://grayswan.github.io/Space-Invaders/"><img src="images/space-invaders.png" width="460px" height="320px" alt="Space Invaders"></a>
-          </li>
-          <li>
-            <a href="http://grayswan.github.io/Surf/"><img src="images/surf.png" width="460px" height="320px" alt="Surf & Paddle"></a>
-          </li>
-          <li>
-            <a href="https://github.com/grayswan/list-maker"><img src="images/listmaker.png" width="460px" height="320px" alt="Listmaker"></a>
-          </li>
-          <li>
-            <div class="empty-thumbnail">
-              <h2>New project coming soon!</h2>
-            </div>
-          </li>
-        </ul>
-    </div>
-    <div class="footer">
-      <p>made by the power of grayswan 2016</p>
-    </div>
+    <main>
+      <ul class="grid cs-style-7">
+        <li>
+          <figure>
+            <a href="http://wastenot.io"><img src="images/wastenot.png" alt="Wastenot"></a>
+            <figcaption>
+              <h3>Final project at the Iron Yard</h3>
+              <span>Sass, React, jQuery, Backbone</span>
+              <a href="http://wastenot.io" target="blank">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="http://grayswan.github.io/Octodex/"><img src="images/Octodex.png" alt="Octodex"></a>
+            <figcaption>
+              <h3>Ladies of the Octodex</h3>
+              <span>an exercise in responsiveness</span>
+              <a href="http://grayswan.github.io/Octodex/" target="blank">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="http://grayswan.github.io/Space-Invaders/"><img src="images/Space-invaders.png" alt="Space Invaders"></a>
+            <figcaption>
+              <h3>Coded along with Mary Rose Cook</h3>
+              <span>Javascript, CSS3</span>
+              <a href="http://grayswan.github.io/Space-Invaders/" target="blank">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="http://grayswan.github.io/Surf/"><img src="images/surf.png" alt="Surf & Paddle"></a>
+            <figcaption>
+              <h3>Replicate of a static document</h3>
+              <span>HTML5, CSS3</span>
+              <a href="http://grayswan.github.io/Surf/" target="blank">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+      <div class="footer">
+        <p>made by the power of grayswan 2016</p>
+      </div>
+      <script src="js/toucheffects.js"></script>
+      <script type="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    </main>
   </body>
 </html>
