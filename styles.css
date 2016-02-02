@@ -290,7 +290,7 @@ section.module.parallax-3 {
   flex-direction: column;
 }
 
-.up_arrow img{
+.up_arrow img {
   width: 25px;
   height:: 25px;
   opacity: .7;
@@ -313,7 +313,6 @@ section.module.parallax-3 {
 .up_arrow a:active {
   text-decoration: none;
 }
-
 
 
 /*//////////////////////////////CONTACT///////////////////////////////////////*/
@@ -552,6 +551,7 @@ section.module.parallax-3 {
     justify-content: center;
     padding-right: 20px;
 	}
+}
 
 @media all and (min-width: 1280px) and (max-width: 1280px) {
   .arrow {
