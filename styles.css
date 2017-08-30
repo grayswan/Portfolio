@@ -74,17 +74,14 @@ header {
 
 section.opener {
   height: 70vh;
-  background-color: #A23456;
-  /*background-color: #133E3B;*/
-  /*background-color: #CFB000;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: .9;
 }
 
 section.opener h1 {
-  color: #A23456;
   font-size: 5em;
   font-weight: 700;
   text-align: center;
@@ -92,45 +89,46 @@ section.opener h1 {
 
 .letter-container a:link {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8)
+  color: rgba(240,114,106)
 }
 .letter-container a:visited {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8)
+  color: rgba(240,114,106)
 }
 .letter-container a:active {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8)
+  color: rgba(240,114,106)
 }
 
 .letter-container h1 a span {
   font-family: "Poiret One";
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(240,114,106, 0.9);
  	opacity: .8;
- 	text-shadow: 0px 0px 1px #fff, 1px 1px 4px rgba(0,0,0,0.7);
-	-webkit-transition: all 0.3s linear;
-	-moz-transition: all 0.3s linear;
-	-o-transition: all 0.3s linear;
-	-ms-transition: all 0.3s linear;
-	transition: all 0.3s linear;
-	-webkit-animation: sharpen 0.9s linear backwards;
-	-moz-animation: sharpen 0.9s linear backwards;
-	-ms-animation: sharpen 0.9s linear backwards;
-	animation: sharpen 0.9s linear backwards;
+ 	text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0, .7);
+	-webkit-transition: all 0s linear;
+	-moz-transition: all 0s linear;
+	-o-transition: all 0s linear;
+	-ms-transition: all 0s linear;
+	transition: all 0s linear;
+	-webkit-animation: sharpen .9s linear backwards;
+	-moz-animation: sharpen .9s linear backwards;
+	-ms-animation: sharpen .9s linear backwards;
+	animation: sharpen .9s linear backwards;
 }
 
 .letter-container h1 a span:nth-child(1) {
+  color: #14143B;
 	-webkit-animation-delay: 0s;
 	-moz-animation-delay: 0s;
 	-ms-animation-delay: 0s;
 	animation-delay: 0s;
 }
 .letter-container h1 a span:nth-child(2) {
-	-webkit-animation-delay: 0.4s;
-	-moz-animation-delay: 0.4s;
-	-ms-animation-delay: 0.4s;
-	animation-delay: 0.4s;
+  color: #788F98;
+	-webkit-animation-delay: 1.1s;
+	-moz-animation-delay: 1.1s;
+	-ms-animation-delay: 1.1s;
+	animation-delay: 1.1s;
 }
 .letter-container h1 a span:nth-child(3) {
 	-webkit-animation-delay: 0.5s;
@@ -139,63 +137,69 @@ section.opener h1 {
 	animation-delay: 0.5s;
 }
 .letter-container h1 a span:nth-child(4) {
-	-webkit-animation-delay: 0.6s;
-	-moz-animation-delay: 0.6s;
-	-ms-animation-delay: 0.6s;
-	animation-delay: 0.6s;
+  color: #14143B;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+	animation-delay: 0s;
 }
 .letter-container h1 a span:nth-child(5) {
-	-webkit-animation-delay: 0.7s;
-	-moz-animation-delay: 0.7s;
-	-ms-animation-delay: 0.7s;
-	animation-delay: 0.7s;
+  color: #788F98;
+	-webkit-animation-delay: 1.1s;
+	-moz-animation-delay: 1.1s;
+	-ms-animation-delay: 1.1s;
+	animation-delay: 1.1s;
 }
 .letter-container h1 a span:nth-child(6) {
-	-webkit-animation-delay: 0.8s;
-	-moz-animation-delay: 0.8s;
-	-ms-animation-delay: 0.8s;
-	animation-delay: 0.8s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	-ms-animation-delay: 0.5s;
+	animation-delay: 0.5s;
 }
 .letter-container h1 a span:nth-child(7) {
-	-webkit-animation-delay: 0.9s;
-	-moz-animation-delay: 0.9s;
-	-ms-animation-delay: 0.9s;
-	animation-delay: 0.9s;
+  color: #14143B;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+	animation-delay: 0s;
 }
 
 .letter-container h1 a span:nth-child(8) {
-	-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	-ms-animation-delay: 1s;
-	animation-delay: 1s;
-}
-
-.letter-container h1 a span:nth-child(9) {
+  color: #788F98;
 	-webkit-animation-delay: 1.1s;
 	-moz-animation-delay: 1.1s;
 	-ms-animation-delay: 1.1s;
 	animation-delay: 1.1s;
 }
 
+.letter-container h1 a span:nth-child(9) {
+	-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;
+	-ms-animation-delay: .5s;
+	animation-delay: .5s;
+}
+
 .letter-container h1 a span:nth-child(10) {
-	-webkit-animation-delay: 1.2s;
-	-moz-animation-delay: 1.2s;
-	-ms-animation-delay: 1.2s;
-	animation-delay: 1.2s;
+  color: #14143B;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+	animation-delay: 0s;
 }
 
 .letter-container h1 a span:nth-child(11) {
-	-webkit-animation-delay: 1.3s;
-	-moz-animation-delay: 1.3s;
-	-ms-animation-delay: 1.3s;
-	animation-delay: 1.3s;
+  color: #788F98;
+	-webkit-animation-delay: 1.1s;
+	-moz-animation-delay: 1.1s;
+	-ms-animation-delay: 1.1s;
+	animation-delay: 1.1s;
 }
 
 .letter-container h1 a span:nth-child(12) {
-	-webkit-animation-delay: 1.4s;
-	-moz-animation-delay: 1.4s;
-	-ms-animation-delay: 1.4s;
-	animation-delay: 1.4s;
+	-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;
+	-ms-animation-delay: .5s;
+	animation-delay: .5s;
 }
 
 @keyframes sharpen {
@@ -204,13 +208,23 @@ section.opener h1 {
    	text-shadow: 0px 0px 100px #fff;
    	color: transparent;
  }
+ 30% {
+     opacity: 0.3;
+     text-shadow: 0px 0px 10px #fff;
+     color: transparent;
+ }
+ 60% {
+     opacity: 0.6;
+     text-shadow: 0px 0px 10px #fff;
+     color: transparent;
+ }
  90% {
    	opacity: 0.9;
    	text-shadow: 0px 0px 10px #fff;
    	color: transparent;
  }
  100% {
-    color: #fff;
+    /*color: #F0726A;*/
    	opacity: 1;
    	text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0,0.7);
  }
@@ -227,27 +241,37 @@ section.opener h1 {
    	color: transparent;
  }
  100% {
-    color: #fff;
+    /*color: #F0726A;*/
    	opacity: 1;
    	text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0,0.7);
  }
 }
 @-webkit-keyframes sharpen {
- 0% {
-   	opacity: 0;
-   	text-shadow: 0px 0px 100px #fff;
-   	color: transparent;
- }
- 90% {
-   	opacity: 0.9;
-   	text-shadow: 0px 0px 10px #fff;
-   	color: transparent;
- }
- 100% {
-    color: #fff;
-   	opacity: 1;
-   	text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0,0.7);
- }
+  0% {
+    	opacity: 0;
+    	text-shadow: 0px 0px 100px #fff;
+    	color: transparent;
+  }
+  30% {
+      opacity: 0.3;
+      text-shadow: 0px 0px 10px #fff;
+      color: transparent;
+  }
+  60% {
+      opacity: 0.6;
+      text-shadow: 0px 0px 10px #fff;
+      color: transparent;
+  }
+  90% {
+    	opacity: 0.9;
+    	text-shadow: 0px 0px 10px #fff;
+    	color: transparent;
+  }
+  100% {
+     /*color: #F0726A;*/
+    	opacity: 1;
+    	text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0,0.7);
+  }
 }
 @-ms-keyframes sharpen {
  0% {
@@ -261,7 +285,7 @@ section.opener h1 {
    	color: transparent;
  }
  100% {
-    color: #fff;
+    /*color: #F0726A;*/
    	opacity: 1;
    	text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0,0.7);
  }
